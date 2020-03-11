@@ -21,7 +21,7 @@ const webapckConfig = {
         use: {
           loader: "babel-loader"
         },
-        exclude: [path.join(__dirname,'..', "/node_modules")]
+        exclude: [path.join(__dirname,'..', "node_modules")]
       }
     ]
   },

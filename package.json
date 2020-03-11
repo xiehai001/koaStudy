@@ -7,7 +7,7 @@
     "start": "nodemon --exec babel-node src/index.js",
     "webpack:debug": "node --inspect-brk ./node_modules/.bin/webpack --inline --progress",
     "build": "cross-env NODE_ENV=prod webpack -config config/webpack.config.prod.js",
-    "dev": "cross-env NODE_ENV=dev nodemon --exec babel-node --inspect ./src/app.js",
+    "dev": "cross-env NODE_ENV=dev nodemon --exec babel-node --inspect ./src/index.js",
     "clean": "rimraf dist"
   },
   "dependencies": {
@@ -16,6 +16,7 @@
     "koa-body": "^4.1.1",
     "koa-combine-routers": "^4.0.2",
     "koa-compose": "^4.1.0",
+    "koa-compress": "^3.0.0",
     "koa-helmet": "^5.2.0",
     "koa-json": "^2.0.2",
     "koa-router": "^8.0.8",
